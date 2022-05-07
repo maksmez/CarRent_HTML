@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/reset.css" type="text/css" />
+   <link rel="stylesheet" href="css/index.css" type="text/css" />
+   <link rel="stylesheet" href="css/media.css" type="text/css" />
+   <link rel="stylesheet" href="css/fontawesome/css/all.css">
+   <!-- slider -->
+   <!-- jQuery 1.8 or later, 33 KB -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <!-- Fotorama from CDNJS, 19 KB -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+   <!-- slider -->
+   <title>CarRent</title>
+   <script> </script>
+</head>
+
+<body>
+   <header>
+      <div class="carrent-and-logo">
+         <a href="index.html">
+            <div class="CarRentLogo"></div>
+         </a>
+
+         <div class="divlogo">
+            <a href="" class="fab fa-vk fa-3x"></a>
+            <a href="" class="fab fa-viber fa-3x"></a>
+            <a href="" class="fab fa-whatsapp fa-3x"></a>
+         </div>
+      </div>
+
+      <div id="block2">
+         <nav>
+            <div class="button-item">
+               <a class="btn-1" href="catalog.html">Каталог</a>
+               <a href="rent_condition.html" class="btn-1">Условия</a>
+               <a href="contact.html" class="btn-1">Контакты</a>
+               <a href="review.html" class="btn-1">Отзывы</a>
+               <a href="pay.html" class="btn-1">Оплата</a>
+            </div>
+         </nav>
+      </div>
+
+      <div id="block3">
+         <a href="login_order.html">
+            <i class="fas fa-user-circle fa-3x"></i>
+            <figcaption>Войти</figcaption>
+         </a>
+      </div>
+
+      <div id="block4">
+         <div class="phone">
+            <i class="fas fa-phone-alt fa-2x "></i>
+            <p>+79241628365</p>
+         </div>
+
+         <button class="Buttonrequest">Оставить заявку</button>
+
+      </div>
+   </header>
+
+
+   <header class="mobile_header">
+      <div id="block4">
+         <div class="phone">
+            <i class="fas fa-phone-alt fa-2x "></i>
+            <p>+79241628365</p>
+         </div>
+
+         <button class="Buttonrequest">Оставить заявку</button>
+
+      </div>
+      <div class="carrent-and-logo">
+         <a href="index.html">
+            <div class="CarRentLogo"></div>
+         </a>
+      </div>
+      <div id="block3">
+         <a href="login_order.html">
+            <i class="fas fa-user-circle fa-3x"></i>
+         </a>
+      </div>
+
+      <nav class="mobile-menu">
+         <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+         <label for="checkbox" class="mobile-menu__btn">
+            <div class="mobile-menu__icon"></div>
+         </label>
+         <div class="mobile-menu__container">
+            <ul class="mobile-menu__list">
+               <li class="mobile-menu__item"><a href="catalog.html" class="mobile-menu__link">Каталог</a></li>
+               <li class="mobile-menu__item"><a href="rent_condition.html" class="mobile-menu__link">Условия</a></li>
+               <li class="mobile-menu__item"><a href="contact.html" class="mobile-menu__link">Контакты</a></li>
+               <li class="mobile-menu__item"><a href="review.html" class="mobile-menu__link">Отзывы</a></li>
+               <li class="mobile-menu__item"><a href="pay.html" class="mobile-menu__link">Оплата</a></li>
+               <li class="mobile-menu__item"><a href="login_order.html" class="fas fa-user-circle fa-1x"></a><a
+                     href="login_order.html" mobile-menu__link">Войти</a></li>
+               <button class="Buttonrequest">Оставить заявку</button>
+               <li class="mobile-menu__item"><a class="mobile-menu__link">+79241346928</a></li>
+            </ul>
+         </div>
+      </nav>
+
+   </header>
+
+
+   <main>
+      <div id="main-container">
+         <div class="bread2">
+            <ul class="breadcrumbs">
+               <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="index.html">Главная</a>
+               </li>
+               <li class="breadcrumbs-item">
+                  <span class="breadcrumbs-link  current">Мои заказы</span>
+               </li>
+            </ul>
+         </div>
+
+
+         <h1>Мои заказы</h1>
+
+         <div class="box_button">
+            <a href="login_order.html" class="login_button" id="select_login">
+               <div>
+                  <p>Мои заказы</p>
+               </div>
+            </a>
+            <a href="login_favorite.html" class="login_button">
+               <div>
+                  <p>Избранное</p>
+               </div>
+            </a>
+            <a href="login_data.html" class="login_button">
+               <div>
+                  <p>Мои данные</p>
+               </div>
+            </a>
+            <a href="" class="login_button" id="exit_account">
+               <div>
+                 <i class="fas fa-sign-out-alt"></i> 
+               </div>
+            </a>
+         </div>
+
+         <div class="Cardcar_order">
+            <div href="login_carcard.html" class="boxcar_order">
+               <div class="left_card">
+                  <h3 class="order_num">Заказ №1234
+                  </h3>
+
+                  <div>
+                     <div>
+                        <p>Дата</p>
+                        <p>23.03.2021</p>
+                     </div>
+                     <div>
+                        <p>Стоимость</p>
+                        <p>2400₽</p>
+                     </div>
+                     <div>
+                        <p>Водитель</p>
+                        <p><label class="checkbox-green">
+                              <input type="checkbox" disabled checked>
+                              <span class="checkbox-green-switch" data-label-on="Да" data-label-off="Нет"></span>
+                           </label>
+                        </p>
+                     </div>
+                     <div>
+                        <p>Статус</p>
+                        <p>Активен</p>
+                     </div>
+                  </div>
+                  <a href="login_carcard.html" class="selectcar_fav">Открыть</a>
+
+                  
+               </div>
+               <div class="right_card">
+
+                  <h2 class="car_name_order">Nissan
+                     Skyline</h2>
+                     <div class="fotorama_order fr" >
+                        <div class="fotorama" data-nav="false" data-width="100%">
+                           <img src="carphoto/skyline1.jpg">
+                           <img src="carphoto/skyline2.jpg">
+                           <img src="carphoto/skyline3.jpg">
+                           <img src="carphoto/skyline4.jpg">
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+         <div class="Cardcar_order">
+            <div href="login_carcard.html" class="boxcar_order">
+               <div class="left_card">
+                  <h3 class="order_num">Заказ №1234
+                  </h3>
+
+                  <div>
+                     <div>
+                        <p>Дата</p>
+                        <p>23.03.2021</p>
+                     </div>
+                     <div>
+                        <p>Стоимость</p>
+                        <p>2400₽</p>
+                     </div>
+                     <div>
+                        <p>Водитель</p>
+                        <p><label class="checkbox-green">
+                              <input type="checkbox" disabled checked>
+                              <span class="checkbox-green-switch" data-label-on="Да" data-label-off="Нет"></span>
+                           </label>
+                        </p>
+                     </div>
+                     <div>
+                        <p>Статус</p>
+                        <p>Активен</p>
+                     </div>
+                  </div>
+                  <a href="login_carcard.html" class="selectcar_fav">Открыть</a>
+
+                  
+               </div>
+               <div class="right_card">
+
+                  <h2 class="car_name_order">Nissan
+                     Skyline</h2>
+                     <div class="fotorama_order fr" >
+                        <div class="fotorama" data-nav="false" data-width="100%">
+                           <img src="carphoto/skyline1.jpg">
+                           <img src="carphoto/skyline2.jpg">
+                           <img src="carphoto/skyline3.jpg">
+                           <img src="carphoto/skyline4.jpg">
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+         <div class="Cardcar_order">
+            <div href="login_carcard.html" class="boxcar_order">
+               <div class="left_card">
+                  <h3 class="order_num">Заказ №1234
+                  </h3>
+
+                  <div>
+                     <div>
+                        <p>Дата</p>
+                        <p>23.03.2021</p>
+                     </div>
+                     <div>
+                        <p>Стоимость</p>
+                        <p>2400₽</p>
+                     </div>
+                     <div>
+                        <p>Водитель</p>
+                        <p><label class="checkbox-green">
+                              <input type="checkbox" disabled checked>
+                              <span class="checkbox-green-switch" data-label-on="Да" data-label-off="Нет"></span>
+                           </label>
+                        </p>
+                     </div>
+                     <div>
+                        <p>Статус</p>
+                        <p>Активен</p>
+                     </div>
+                  </div>
+                  <a href="login_carcard.html" class="selectcar_fav">Открыть</a>
+
+                  
+               </div>
+               <div class="right_card">
+
+                  <h2 class="car_name_order">Nissan
+                     Skyline</h2>
+                     <div class="fotorama_order fr" >
+                        <div class="fotorama" data-nav="false" data-width="100%">
+                           <img src="carphoto/skyline1.jpg">
+                           <img src="carphoto/skyline2.jpg">
+                           <img src="carphoto/skyline3.jpg">
+                           <img src="carphoto/skyline4.jpg">
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+         <div class="Cardcar_order">
+            <div href="login_carcard.html" class="boxcar_order">
+               <div class="left_card">
+                  <h3 class="order_num">Заказ №1234
+                  </h3>
+
+                  <div>
+                     <div>
+                        <p>Дата</p>
+                        <p>23.03.2021</p>
+                     </div>
+                     <div>
+                        <p>Стоимость</p>
+                        <p>2400₽</p>
+                     </div>
+                     <div>
+                        <p>Водитель</p>
+                        <p><label class="checkbox-green">
+                              <input type="checkbox" disabled checked>
+                              <span class="checkbox-green-switch" data-label-on="Да" data-label-off="Нет"></span>
+                           </label>
+                        </p>
+                     </div>
+                     <div>
+                        <p>Статус</p>
+                        <p>Активен</p>
+                     </div>
+                  </div>
+                  <a href="login_carcard.html" class="selectcar_fav">Открыть</a>
+
+                  
+               </div>
+               <div class="right_card">
+
+                  <h2 class="car_name_order">Nissan
+                     Skyline</h2>
+                     <div class="fotorama_order fr" >
+                        <div class="fotorama" data-nav="false" data-width="100%">
+                           <img src="carphoto/skyline1.jpg">
+                           <img src="carphoto/skyline2.jpg">
+                           <img src="carphoto/skyline3.jpg">
+                           <img src="carphoto/skyline4.jpg">
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+         <div class="Cardcar_order">
+            <div href="login_carcard.html" class="boxcar_order">
+               <div class="left_card">
+                  <h3 class="order_num">Заказ №1234
+                  </h3>
+
+                  <div>
+                     <div>
+                        <p>Дата</p>
+                        <p>23.03.2021</p>
+                     </div>
+                     <div>
+                        <p>Стоимость</p>
+                        <p>2400₽</p>
+                     </div>
+                     <div>
+                        <p>Водитель</p>
+                        <p><label class="checkbox-green">
+                              <input type="checkbox" disabled checked>
+                              <span class="checkbox-green-switch" data-label-on="Да" data-label-off="Нет"></span>
+                           </label>
+                        </p>
+                     </div>
+                     <div>
+                        <p>Статус</p>
+                        <p>Активен</p>
+                     </div>
+                  </div>
+                  <a href="login_carcard.html" class="selectcar_fav">Открыть</a>
+
+                  
+               </div>
+               <div class="right_card">
+
+                  <h2 class="car_name_order">Nissan
+                     Skyline</h2>
+                     <div class="fotorama_order fr" >
+                        <div class="fotorama" data-nav="false" data-width="100%">
+                           <img src="carphoto/skyline1.jpg">
+                           <img src="carphoto/skyline2.jpg">
+                           <img src="carphoto/skyline3.jpg">
+                           <img src="carphoto/skyline4.jpg">
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+         
+        
+         
+
+
+
+
+         <nav class="nav_pag">
+            <ul class="pagination">
+               <li class="pagination-item ">
+                  <a href="#">&#171;</a>
+               </li>
+               <li class="pagination-item pg-active">
+                  <a href="#">1</a>
+               </li>
+               <li class="pagination-item ">
+                  <a href="#">2</a>
+               </li>
+               <li class="pagination-item">
+                  <a href="#">3</a>
+               </li>
+               <li class="pagination-item">
+                  <a href="#">4</a>
+               </li>
+               <li class="pagination-item">
+                  <a href="#">&#187;</a>
+               </li>
+            </ul>
+         </nav>
+
+   </main>
+
+   <footer>
+      <div class="carrent-and-logo">
+         <a href="index.html">
+            <div class="CarRentLogo"></div>
+         </a>
+
+         <div class="divlogo">
+            <a href="" class="fab fa-vk fa-3x"></a>
+            <a href="" class="fab fa-viber fa-3x"></a>
+            <a href="" class="fab fa-whatsapp fa-3x"></a>
+         </div>
+
+         <div id="block5">
+            <div class="phonefooter">
+               <i class="fas fa-phone-alt fa-2x "></i>
+               <aside>+79241628365</aside>
+            </div>
+            <div id="mail">
+               <i class="fas fa-envelope fa-2x"></i>
+               <aside>carrent@mail.com</aside>
+            </div>
+         </div>
+      </div>
+
+      <div class="links">
+         <a href="pay.html">Оплата</a>
+         <a href="contact.html">Контакты</a>
+         <a href="catalog.html">Каталог</a>
+      </div>
+
+      <div class="links">
+         <a href="review.html">Отзывы</a>
+         <a href="rent_condition.html">Условия</a>
+         <a href="">О нас</a>
+      </div>
+
+      <div class="social">
+         <div class="Share">
+            <h2>Расскажите о нас &nbsp;</h2>
+            <i class="fas fa-share-alt fa-3x"></i>
+         </div>
+
+         <div class="divlogo">
+            <a href="" class="fab fa-vk fa-3x"></a>
+            <a href="" class="fab fa-viber fa-3x"></a>
+            <a href="" class="fab fa-whatsapp fa-3x"></a>
+            <a href="" class="fab fa-telegram fa-3x"></a>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>
